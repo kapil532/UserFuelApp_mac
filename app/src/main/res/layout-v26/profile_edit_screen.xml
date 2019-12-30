@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/colorPrimary">
+
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:src="@drawable/ic_iconfinder_back"/>
+            <RelativeLayout
+                android:layout_width="70dp"
+                android:id="@+id/round"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileIcon"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/iconfinder_je"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="1dp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/icon_plus"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_alignBottom="@id/profileIcon"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_plus"
+                    app:civ_border_color="#FF000000"
+                    />
+
+            </RelativeLayout>
+
+            <packag.nnk.com.userfuelapp.ui.CustomTextView
+                android:layout_width="match_parent"
+                android:id="@+id/mobile"
+                android:textColor="@color/white_color"
+                android:textSize="15sp"
+                android:text="8095128426"
+                android:layout_below="@+id/round"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginTop="14dp"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editText"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            />
+
+        <EditText
+            android:id="@+id/email_optional"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/email_id_optional"
+            android:inputType="textEmailAddress"
+            />
+
+        <packag.nnk.com.userfuelapp.ui.CustomMediumFontTextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="*Please  remember pin after set, because on every transaction you required this pin."
+            android:textSize="14sp"
+            android:visibility="gone"
+             />
+
+        <packag.nnk.com.userfuelapp.ui.OtpEdittextClass
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:visibility="gone"
+            android:hint="@string/set_pin"
+            android:inputType="textPersonName|numberDecimal"
+            android:maxLength="4"
+             />
+
+        <packag.nnk.com.userfuelapp.ui.CustomMediumFontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="*Please chhose you taxi service!"
+            android:textSize="14sp"
+
+            />
+
+        <com.isapanah.awesomespinner.AwesomeSpinner
+            android:id="@+id/my_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:spinnerDirection="ltr"
+            android:layout_marginTop="2dp"
+            app:spinnerHint="Select a category"
+
+            />
+
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Your Cab No."
+            android:inputType="textPersonName"
+            />
+
+        <Button
+            android:id="@+id/submitDetails"
+            style="@style/all_button_style"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/light_button_background"
+            android:text="Submit Details" />
+
+        <packag.nnk.com.userfuelapp.ui.CustomTextView
+            android:id="@+id/skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/Skip"
+            android:visibility="gone"
+            android:textColor="@color/text_blue"
+            android:textSize="24sp" />
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

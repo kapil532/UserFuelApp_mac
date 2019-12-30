@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    cardview:cardCornerRadius="2dp"
+    cardview:cardElevation="3dp"
+    cardview:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/parentView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_pb"/>
+
+        <packag.nnk.com.userfuelapp.ui.CustomMediumFontTextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:layout_marginLeft="12dp"
+            android:maxLines="3"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="#444"
+            android:textSize="18sp"
+            android:layout_marginTop="2dp"
+            android:text="Indion oil Corporation Lim"
+            android:textStyle="bold"/>
+
+
+        <packag.nnk.com.userfuelapp.ui.CustomTextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="12dp"
+            android:maxLines="3"
+            android:layout_marginTop="7dp"
+            android:text="Hsr layout 560065"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="#444"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <packag.nnk.com.userfuelapp.ui.CustomTextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:layout_below="@+id/address"
+            android:layout_marginLeft="12dp"
+            android:maxLines="3"
+            android:layout_marginTop="7dp"
+            android:text="8:10pm : 20/03/2019"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="#444"
+            android:textSize="14sp"
+          />
+
+        <packag.nnk.com.userfuelapp.ui.CustomTextView
+            android:id="@+id/rupees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:layout_below="@+id/time"
+            android:layout_marginLeft="12dp"
+            android:maxLines="3"
+            android:layout_marginTop="7dp"
+            android:text="amount paid: 200 Rs."
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="#444"
+            android:textSize="14sp"
+            />
+
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

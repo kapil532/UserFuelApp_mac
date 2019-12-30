@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="12dp">
+
+
+    <TextView
+        android:id="@+id/search_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="16dp"
+        android:maxLines="1"
+        android:background="@drawable/edittext_background"
+        android:textSize="20sp"
+        android:textColor="@color/quantum_black_100"
+        android:hint="find petrol bunk" />
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">goFuels</string>
+    <string name="todo">TODOW</string>
+    <string name="go_fuels">goFuels</string>
+    <string name="indian">Loading...</string>
+    <string name="adresss">loading...</string>
+    <string name="two_rs">\u20B9 100</string>
+    <string name="two_rs1">\u20B9 200</string>
+    <string name="symbol_rs">\u20B9</string>
+    <string name="two_rs2">\u20B9 500</string>
+    <string name="two_rs3">\u20B9 800</string>
+    <string name="two_rs4">\u20B9 1,000</string>
+    <string name="help_string">Got a problem? We\'ll solve it fast. Please let us know below.</string>
+    <string name="fingerprint_title">goFuels Authentication</string>
+    <string name="fingerprint_message">Confirm fingerprint to continue</string>
+
+    <string name="booking_notificatoi">We\'ll notify you when you get payment credited or debited. </string>
+    <string name="promo_notificatoi">We\'ll let you know if petrol price down or increase.</string>
+    <string name="password_title">Password</string>
+    <string name="password_message">You need to enter your password because a new fingerprint was added</string>
+    <string name="s">Switch</string>
+    <string name="logout">logout</string>
+    <string name="notification_off">Notification Off</string>
+    <string name="version_1_0_1">version 1.0.1</string>
+    <string name="name">Name</string>
+    <string name="todow">TODO</string>
+    <string name="email_id_optional">Email id(Optional)</string>
+    <string name="set_pin">Set Pin</string>
+    <string name="Skip"><u>skip</u></string>
+    <string name="or">------------OR------------</string>
+
+
+
+    <string name="msg_error_unable_select_profile_pic">Unable to set profile image. Please try again!</string>
+    <string name="lbl_set_profile_photo">Set profile image</string>
+    <string name="lbl_take_camera_picture">Take a picture</string>
+    <string name="lbl_choose_from_gallery">Choose from gallery</string>
+    <string name="toast_image_intent_null">Image picker option is missing!</string>
+</resources>

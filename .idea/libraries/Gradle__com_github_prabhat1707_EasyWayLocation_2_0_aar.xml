@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.prabhat1707:EasyWayLocation:2.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/56522c0c9761cdeeec1ec8d7e06ac216/EasyWayLocation-2.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/56522c0c9761cdeeec1ec8d7e06ac216/EasyWayLocation-2.0/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.prabhat1707/EasyWayLocation/2.0/c737a485f03168d30b53879e694dceab20aa5dce/EasyWayLocation-2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
