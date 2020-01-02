@@ -1,12 +1,17 @@
 package packag.nnk.com.userfuelapp.transaction;
 
+import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.AnimationUtils;
+import android.view.animation.LayoutAnimationController;
 import android.widget.TextView;
 
 import androidx.appcompat.widget.Toolbar;
+
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -18,7 +23,9 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import packag.nnk.com.userfuelapp.R;
+import packag.nnk.com.userfuelapp.activities.DriverWalletAddHistory;
 import packag.nnk.com.userfuelapp.activities.MainActivity;
 import packag.nnk.com.userfuelapp.base.ApiUtils;
 import packag.nnk.com.userfuelapp.base.BaseActivity;
@@ -45,12 +52,20 @@ public class TransactionActivity extends BaseActivity {
     @BindView(R.id.no_text)
     TextView no_text;
 
+
+    @BindView(R.id.history)
+    CardView history;
+
+
     @BindView(R.id.toolbar)
     Toolbar toolbar;
 
     ApiInterface getApiInterfaces;
 
     boolean nextScreen = false;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,12 +81,22 @@ public class TransactionActivity extends BaseActivity {
 
         }
 
+
+
         getApiInterfaces = new ApiUtils().getApiInterfaces();
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         //   feedsList_tran = (List<RangeTransaction>) readJsonData();
         getRangeTransaction();
 
         setupNavigation();
+    }
+
+    @OnClick(R.id.history)
+    void openWallet()
+    {
+        Intent main_ = new Intent(getApplicationContext(), DriverWalletAddHistory.class);
+        startActivity(main_);
+
     }
 
     void getRangeTransaction() {
@@ -118,13 +143,16 @@ public class TransactionActivity extends BaseActivity {
 
     }
 
+
+
     @Override
     protected void onStop() {
         super.onStop();
 
     }
 
-    private void setupNavigation() {
+    private void setupNavigation()
+    {
 
         toolbar.setTitle("History");
         setSupportActionBar(toolbar);
@@ -162,6 +190,11 @@ public class TransactionActivity extends BaseActivity {
     void setAdapter() {
         adapter = new MyRecyclerViewAdapter(TransactionActivity.this, feedsList_tran);
         mRecyclerView.setAdapter(adapter);
+
+        /*LayoutAnimationController animation = AnimationUtils.loadLayoutAnimation(getApplicationContext(),getResources().getIdentifier("item_animation_from_left","anim",getPackageName()));
+        mRecyclerView.setLayoutAnimation(animation);
+        // wallet_list.notifyDataSetChanged();
+        mRecyclerView.scheduleLayoutAnimation();*/
 
     }
 

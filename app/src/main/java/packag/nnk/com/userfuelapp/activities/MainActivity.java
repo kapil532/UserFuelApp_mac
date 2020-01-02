@@ -60,6 +60,7 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -235,11 +236,17 @@ public class MainActivity extends BaseActivity implements
     private void setupNavigation() {
 
         toolbar = findViewById(R.id.toolbar);
-        ImageView menu = findViewById(R.id.menu);
+        LinearLayout menu = findViewById(R.id.menu_lay);
         TextView title = findViewById(R.id.textHeader);
         setFont(title);
         title.setText(getResources().getString(R.string.go_fuels));
         drawerLayout = findViewById(R.id.drawer_layout);
+        title.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                drawerLayout.openDrawer(GravityCompat.START);
+            }
+        });
         menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

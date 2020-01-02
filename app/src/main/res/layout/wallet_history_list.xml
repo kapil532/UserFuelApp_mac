@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:elevation="1dp"
+    app:cardElevation="1dp"
+    android:layout_margin="8dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+
+        >
+
+  <packag.nnk.com.userfuelapp.ui.CustomTextView
+      android:id="@+id/balance"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textSize="18sp"
+      android:text="10000Rs"
+      android:textColor="@color/quantum_black_100"
+      />
+<packag.nnk.com.userfuelapp.ui.CustomTextView
+    android:id="@+id/date"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:textSize="16sp"
+    android:text="12:@1211221"
+    android:textColor="@color/quantum_black_100"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,6 +1,7 @@
 package packag.nnk.com.userfuelapp.fragment_view;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -15,6 +16,7 @@ import androidx.fragment.app.Fragment;
 import java.text.DecimalFormat;
 
 import packag.nnk.com.userfuelapp.R;
+import packag.nnk.com.userfuelapp.activities.DriverWalletAddHistory;
 import packag.nnk.com.userfuelapp.base.ApiUtils;
 import packag.nnk.com.userfuelapp.base.AppSharedPreUtils;
 import packag.nnk.com.userfuelapp.base.CommonClass;
@@ -44,6 +46,13 @@ public class WalletFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.wallet_fragment, container, false);
         wallettext = view.findViewById(R.id.wallettext);
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent main_ = new Intent(getContext(), DriverWalletAddHistory.class);
+                startActivity(main_);
+            }
+        });
 
         return view;
     }

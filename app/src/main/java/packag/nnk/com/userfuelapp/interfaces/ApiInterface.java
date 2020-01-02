@@ -19,6 +19,7 @@ import packag.nnk.com.userfuelapp.model.Post;
 import packag.nnk.com.userfuelapp.model.RangeTransaction;
 import packag.nnk.com.userfuelapp.model.SlackMessage;
 import packag.nnk.com.userfuelapp.model.UserDetails;
+import packag.nnk.com.userfuelapp.model.wallet.WalletHistory;
 import packag.nnk.com.userfuelapp.petrol_bunk_details.GetList;
 import packag.nnk.com.userfuelapp.transaction.Transaction;
 import packag.nnk.com.userfuelapp.transaction.TransactionPojo;
@@ -62,6 +63,11 @@ public interface ApiInterface {
 
     @GET(CommonClass.DRIVER_IMAGE + "{userId}")
     Call<ResponseBody> getDriverImage(@Path("userId") String userId);
+
+
+    @GET(CommonClass.DRIVER_TRANSACTION + "{userId}")
+    Call<WalletHistory> getWalletTras(@Path("userId") String userId);
+
 
 
     @POST(CommonClass.FIREBASE_TOKEN)

@@ -7,7 +7,9 @@
     android:layout_height="wrap_content"
     android:elevation="12dp"
     app:cardElevation="12dp">
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
     <packag.nnk.com.userfuelapp.ui.CustomMediumFontTextView
         android:id="@+id/wallettext"
         android:layout_width="wrap_content"
@@ -15,5 +17,9 @@
         android:layout_height="wrap_content"
         android:textColor="@color/green_wallet"
         android:textSize="16sp" />
+
+
+
+</LinearLayout>
 
 </androidx.cardview.widget.CardView>

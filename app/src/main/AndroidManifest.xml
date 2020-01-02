@@ -45,6 +45,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".activities.MainActivity"></activity>
+        <activity android:name=".activities.DriverWalletAddHistory"></activity>
         <activity android:name=".activities.SearchBunkStationActvity"></activity>
         <activity android:name=".activities.DummyActivity"></activity>
         <activity android:name=".activities.UserCreateActivity"></activity>

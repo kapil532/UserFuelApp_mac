@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import packag.nnk.com.userfuelapp.model.Bunk;
+import packag.nnk.com.userfuelapp.model.wallet.History;
 
 public class CommonClass
 {
@@ -42,6 +43,7 @@ public class CommonClass
     public static final String FIREBASE_TOKEN = "user/updateProfile";
     public static final String RANGE_TRANSACTION = "driver/transaction/";
     public static final String DRIVER_PAYMENT = "driver/bunkPayment/";
+    public static final String DRIVER_TRANSACTION = "driver/transactionHistory/";
     public static final String UPLOAD_IMAGE = "upload-image/";
     public static final String DRIVER_IMAGE = "driver/image/";
     public static final String BUNK_LAT_LANG = "bunk/latlang";
@@ -109,6 +111,21 @@ public class CommonClass
         ArrayList<Bunk> arl = new ArrayList<Bunk>();
         for (Object object : myList) {
             arl.add((Bunk) object);
+        }
+        return arl;
+
+    }
+
+
+    public static ArrayList<History> listToArrayListHis(List<History> myList)
+    {
+        if(myList == null)
+        {
+            return null;
+        }
+        ArrayList<History> arl = new ArrayList<History>();
+        for (Object object : myList) {
+            arl.add((History) object);
         }
         return arl;
 

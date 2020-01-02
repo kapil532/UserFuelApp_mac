@@ -10,6 +10,7 @@ import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.text.InputFilter;
 import android.text.TextUtils;
 import android.util.Log;
 import android.util.Patterns;
@@ -138,7 +139,7 @@ public class UserCreateActivity extends BaseActivity {
           //  number = extras.getString("number");
             SCREEN_NEXT = extras.getBoolean("key");
         }
-
+        driverId.setFilters(new InputFilter[] {new InputFilter.AllCaps()});
         mobile.setText("Mobile No. +91-"+user.getMobile());
 
         loadProfileDefault();
@@ -202,17 +203,15 @@ public class UserCreateActivity extends BaseActivity {
         name.setText(user.getUsername());
         email_optional.setText("" + user.getEmail());
         driverId.setText(""+user.getCabNumber());
-        if(user.getDriverAggregator().toString().equalsIgnoreCase("ola"))
-        {
-            spinner.setSelection(0);
-        }
-        else if(user.getDriverAggregator().toString().equalsIgnoreCase("uber"))
-        {
-            spinner.setSelection(1);
-        }
-        else
-        {
-            spinner.setSelection(2);
+
+        if(user.getDriverAggregator() != null) {
+            if (user.getDriverAggregator().toString().equalsIgnoreCase("ola")) {
+                spinner.setSelection(0);
+            } else if (user.getDriverAggregator().toString().equalsIgnoreCase("uber")) {
+                spinner.setSelection(1);
+            } else {
+                spinner.setSelection(2);
+            }
         }
 
     }

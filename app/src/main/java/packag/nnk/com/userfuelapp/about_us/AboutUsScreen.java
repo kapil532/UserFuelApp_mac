@@ -25,8 +25,11 @@ public class AboutUsScreen extends BaseActivity {
     public static String url="https://www.driver.gudy.in/";
     public static String title_text="";
     TextView help;
+
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.about_us_screen);
