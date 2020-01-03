@@ -101,6 +101,18 @@
             android:inputType="textEmailAddress"
             />
 
+
+
+        <EditText
+            android:id="@+id/city_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="City Name"
+            android:inputType="textEmailAddress"
+            />
         <packag.nnk.com.userfuelapp.ui.CustomMediumFontTextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"

@@ -69,6 +69,7 @@ import packag.nnk.com.userfuelapp.base.ErrorUtils;
 import packag.nnk.com.userfuelapp.base.ImagePickerActivity;
 import packag.nnk.com.userfuelapp.interfaces.ApiInterface;
 import packag.nnk.com.userfuelapp.model.ApiError;
+import packag.nnk.com.userfuelapp.model.Location;
 import packag.nnk.com.userfuelapp.model.User;
 import packag.nnk.com.userfuelapp.model.UserDetails;
 import retrofit2.Call;
@@ -90,6 +91,10 @@ public class UserCreateActivity extends BaseActivity {
 
     @BindView(R.id.editText2)
     EditText driverId;
+
+
+    @BindView(R.id.city_name)
+    EditText city_name;
 
     @BindView(R.id.skip)
     TextView skip;
@@ -118,6 +123,7 @@ public class UserCreateActivity extends BaseActivity {
     public static final int REQUEST_IMAGE = 100;
 
     boolean SCREEN_NEXT=false;
+    Location loc;
 
 
     FirebaseStorage storage;
@@ -129,7 +135,7 @@ public class UserCreateActivity extends BaseActivity {
         ButterKnife.bind(this);
         mApiService_ = new ApiUtils().getApiInterfaces();
 
-
+        loc = AppSharedPreUtils.getInstance(getApplicationContext()).getLocation();
         storage = FirebaseStorage.getInstance();
         storageReference = storage.getReference();
 
@@ -176,6 +182,7 @@ public class UserCreateActivity extends BaseActivity {
         });
 
         setFont(submitDetails);
+        setFont(city_name);
 //        setFont(spinner);
         setFont(name);
         setFont(email_optional);
@@ -204,6 +211,15 @@ public class UserCreateActivity extends BaseActivity {
         email_optional.setText("" + user.getEmail());
         driverId.setText(""+user.getCabNumber());
 
+        if (user.getCity() != null)
+        {
+      city_name.setText(user.getCity());
+        }
+        else
+        {
+            city_name.setText(loc.getCity());
+        }
+
         if(user.getDriverAggregator() != null) {
             if (user.getDriverAggregator().toString().equalsIgnoreCase("ola")) {
                 spinner.setSelection(0);
@@ -221,7 +237,7 @@ public class UserCreateActivity extends BaseActivity {
         JsonObject json = new JsonObject();
         try {
             json.addProperty("email", "" + email);
-//            json.addProperty("password", "");
+            json.addProperty("city", ""+ city_name.getText().toString());
             json.addProperty("username", ""+name.getText().toString());
             json.addProperty("userId", "" + user.getUserId());
             json.addProperty("role", "driver");
@@ -280,6 +296,24 @@ public class UserCreateActivity extends BaseActivity {
 
     }
 
+    void updateStoreImage()
+    {
+        JsonObject json = new JsonObject();
+        json.addProperty("url",""+URL_IMAGE);
+        Call<ResponseBody> payment = mApiService_.updateDriverImage(json,user.getUserId());
+        payment.enqueue(new Callback<ResponseBody>() {
+            @Override
+            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+
+            }
+
+            @Override
+            public void onFailure(Call<ResponseBody> call, Throwable t) {
+
+            }
+        });
+    }
+
     void showMessage(String message) {
         Toast.makeText(getApplicationContext(),message, Toast.LENGTH_LONG).show();
     }
@@ -289,6 +323,12 @@ public class UserCreateActivity extends BaseActivity {
             makeToast("Please enter name");
             return;
         }
+        if(city_name.getText().toString().length() ==0)
+        {
+            makeToast("Please enter city name");
+            return;
+        }
+
         if(email_optional.getText().toString().length()>0) {
             if (isValidEmail(email_optional.getText().toString())) {
                 createUser(pin.getText().toString(), (String) spinner.getSelectedItem(), email_optional.getText().toString());
@@ -473,6 +513,7 @@ private void getImageFromStorage()
                         public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                             progressDialog.dismiss();
                             Toast.makeText(getApplicationContext(), "Uploaded", Toast.LENGTH_SHORT).show();
+                            updateStoreImage();
                             getImageFromStorage();
                         }
                     })

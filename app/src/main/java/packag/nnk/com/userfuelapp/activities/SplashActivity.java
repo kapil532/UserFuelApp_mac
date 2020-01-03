@@ -21,7 +21,9 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.example.easywaylocation.EasyWayLocation;
+import com.example.easywaylocation.GetLocationDetail;
 import com.example.easywaylocation.Listener;
+import com.example.easywaylocation.LocationData;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.gms.maps.model.LatLng;
@@ -111,9 +113,23 @@ public class SplashActivity extends BaseActivity implements Listener {
         loc.setLatitude(location.getLatitude());
         loc.setLongitude(location.getLongitude());
 
-        AppSharedPreUtils.getInstance(getApplicationContext()).saveLocation(loc);
-        openNextActivity();
-//      /  getLocationDetail.getAddress(location.getLatitude(), location.getLongitude(), "xyz");
+
+
+        GetLocationDetail getLocationDetail = new GetLocationDetail(new LocationData.AddressCallBack() {
+            @Override
+            public void locationData(LocationData locationData) {
+                loc.setCity(locationData.getCity());
+
+                AppSharedPreUtils.getInstance(getApplicationContext()).saveLocation(loc);
+                // loceasyWayLocation.
+                openNextActivity();
+            }
+        },this);
+        getLocationDetail.getAddress(location.getLatitude(), location.getLongitude(), "xyz");
+
+
+
+
     }
 
     @Override

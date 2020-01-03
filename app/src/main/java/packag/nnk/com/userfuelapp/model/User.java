@@ -33,15 +33,36 @@ public class User {
     @SerializedName("active")
     @Expose
     private Integer active;
+
+
+
     @SerializedName("createdAt")
     @Expose
     private String createdAt;
+
+
+
+    @SerializedName("city")
+    @Expose
+    private String city;
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
     @SerializedName("version")
     @Expose
     private Integer version;
     @SerializedName("isPinAvailable")
     @Expose
     private Boolean isPinAvailable;
+
+
+
 
     public String getUserId() {
         return userId;

@@ -65,6 +65,10 @@ public interface ApiInterface {
     Call<ResponseBody> getDriverImage(@Path("userId") String userId);
 
 
+ @POST(CommonClass.DRIVER_STORE_IMAGE + "{userId}")
+    Call<ResponseBody> updateDriverImage(@Body JsonObject json,@Path("userId") String userId);
+
+
     @GET(CommonClass.DRIVER_TRANSACTION + "{userId}")
     Call<WalletHistory> getWalletTras(@Path("userId") String userId);
 
