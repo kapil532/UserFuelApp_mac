@@ -22,8 +22,7 @@ import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.easywaylocation.EasyWayLocation;
-import com.example.easywaylocation.Listener;
+import com.google.android.gms.location.LocationRequest;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -39,6 +38,8 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import packag.nnk.com.userfuelapp.R;
 import packag.nnk.com.userfuelapp.base.BaseActivity;
+import packag.nnk.com.userfuelapp.base.EasyWayLocation;
+import packag.nnk.com.userfuelapp.base.Listener;
 import packag.nnk.com.userfuelapp.bunk_search.CustomAdapter;
 import packag.nnk.com.userfuelapp.interfaces.getBunkDetails;
 import packag.nnk.com.userfuelapp.model.Bunk;
@@ -62,7 +63,7 @@ public class SearchBunkStationActvity extends BaseActivity implements Listener
 
     private String myPer[] = {Manifest.permission.ACCESS_FINE_LOCATION};
 
-
+LocationRequest locationRequest;
 
 
     @BindView(R.id.back)
@@ -81,7 +82,8 @@ public class SearchBunkStationActvity extends BaseActivity implements Listener
 
         mFirebaseDatabaseReference   = FirebaseDatabase.getInstance().getReference("location");
 
-
+       locationRequest = new LocationRequest();
+       locationRequest.setInterval(10000);
         initAutoCompleteTextView();
 
         bunkArrayList=(ArrayList<Bunk> ) getIntent().getExtras().getSerializable("bunk_list");
@@ -269,7 +271,7 @@ public class SearchBunkStationActvity extends BaseActivity implements Listener
     }
 
     private void doLocationWork() {
-        lati = easyWayLocation.getLatitude();
+       /* lati = easyWayLocation.getLatitude();
         longi = easyWayLocation.getLongitude();
         Log.e("LOC", "LOC" + lati);
         if (lati != 0.0) {
@@ -277,7 +279,7 @@ public class SearchBunkStationActvity extends BaseActivity implements Listener
             loc.setLatitude(easyWayLocation.getLatitude());
             loc.setLongitude(easyWayLocation.getLongitude());
 
-        }
+        }*/
 //        easyWayLocation.startLocation();
     }
 
@@ -296,8 +298,8 @@ public class SearchBunkStationActvity extends BaseActivity implements Listener
         if (easyWayLocation == null) {
 
             Log.e("LOcation","Location---null");
-            easyWayLocation = new EasyWayLocation(this, false, this);
-            easyWayLocation.startLocation();
+            easyWayLocation = new EasyWayLocation(this, locationRequest,false, this);
+
 
         } else if (easyWayLocation.hasLocationEnabled()) {
 
@@ -313,12 +315,14 @@ public class SearchBunkStationActvity extends BaseActivity implements Listener
     public void locationOn() {
        // easyWayLocation.endUpdates();
         Log.e("LOcation","Location---on");
+//        easyWayLocation.b
         stopLocationUpdate();
     }
 
     @Override
     public void currentLocation(Location location)
     {
+
 
      Log.e("LOcation","Location"+location.getLatitude());
         stopLocationUpdate();
@@ -338,23 +342,29 @@ public class SearchBunkStationActvity extends BaseActivity implements Listener
 
 void stopLocationUpdate()
 {
+
+    Log.e("LOcation","Location---2");
     if (easyWayLocation != null)
     {
+
+        Log.e("LOcation","Location---1");
+      //  easyWayLocation.endUpdates();
         if (easyWayLocation.hasLocationEnabled()) {
+            Log.e("LOcation","Location---3");
+
             easyWayLocation.endUpdates();
-            easyWayLocation = null;
+
         }
     }
 
 }
 
 
-
-
-
-
-
-
+    @Override
+    protected void onStop() {
+        super.onStop();
+        stopLocationUpdate();
+    }
 
     public static interface ClickListener{
         public void onClick(View view,int position);
@@ -416,6 +426,10 @@ void stopLocationUpdate()
     @Override
     protected void onResume() {
         super.onResume();
+        if(easyWayLocation != null)
+        {
+            easyWayLocation.startLocation();
+        }
        // easyWayLocation.startLocation();
     }
 

@@ -11,22 +11,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84cbc974-179f-40bd-9312-9a5f2d9ffb07" name="Default Changelist" comment="new">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/base/CurrencyEditText.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/base/EasyWayLocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/base/Listener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/about_us/SuccessScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/about_us/SuccessScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/activities/SearchBunkStationActvity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/activities/SearchBunkStationActvity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/single_grid_element.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/single_grid_element.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/attrs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/attrs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,11 +42,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/activities/SearchBunkStationActvity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
-              <caret line="305" column="12" lean-forward="true" selection-start-line="305" selection-start-column="12" selection-end-line="305" selection-end-column="12" />
+            <state relative-caret-position="149">
+              <caret line="354" column="32" selection-start-line="354" selection-start-column="32" selection-end-line="354" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,20 +54,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.prabhat1707/EasyWayLocation/2.0/c737a485f03168d30b53879e694dceab20aa5dce/EasyWayLocation-2.0-sources.jar!/com/example/easywaylocation/Listener.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/base/EasyWayLocation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/activities/SplashActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="251" column="13" lean-forward="true" selection-start-line="247" selection-start-column="8" selection-end-line="251" selection-end-column="13" />
+            <state relative-caret-position="58">
+              <caret line="358" column="41" selection-start-line="358" selection-start-column="41" selection-end-line="358" selection-end-column="41" />
+              <folding>
+                <element signature="docComment;class#EasyWayLocation#0" />
+                <element signature="e#12537#12981#0" expanded="true" />
+                <element signature="e#12980#12981#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,6 +97,10 @@
       <find>UserA</find>
       <find>URL_IMAGE</find>
       <find>loadProfile</find>
+      <find>getmListener</find>
+      <find>checkLocationSetting</find>
+      <find>locationCallback</find>
+      <find>beginUpdates</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -159,7 +154,9 @@
         <option value="$PROJECT_DIR$/app/src/main/res/values/attrs.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/base/CurrencyEditText.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/single_grid_element.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/base/Listener.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/activities/SearchBunkStationActvity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/base/EasyWayLocation.java" />
       </list>
     </option>
   </component>
@@ -408,7 +405,7 @@
       <window_info id="Capture Tool" order="7" />
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="0" weight="0.32907802" />
-      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.4985694" weight="0.6361446" />
+      <window_info active="true" anchor="bottom" id="Logcat" order="1" sideWeight="0.4985694" visible="true" weight="0.42409638" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Android Profiler" order="3" />
       <window_info anchor="bottom" id="Debug" order="4" />
@@ -467,31 +464,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="new" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/interfaces/getBunkDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="29" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/drawer_menu.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/model/Balance.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -918,20 +890,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.prabhat1707/EasyWayLocation/2.0/c737a485f03168d30b53879e694dceab20aa5dce/EasyWayLocation-2.0-sources.jar!/com/example/easywaylocation/Listener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.prabhat1707/EasyWayLocation/2.0/c737a485f03168d30b53879e694dceab20aa5dce/EasyWayLocation-2.0-sources.jar!/com/example/easywaylocation/EasyWayLocation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="51" column="28" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/activities/SplashActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -939,12 +897,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/base/Listener.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.prabhat1707/EasyWayLocation/2.0/c737a485f03168d30b53879e694dceab20aa5dce/EasyWayLocation-2.0-sources.jar!/com/example/easywaylocation/Listener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.prabhat1707/EasyWayLocation/2.0/c737a485f03168d30b53879e694dceab20aa5dce/EasyWayLocation-2.0-sources.jar!/com/example/easywaylocation/EasyWayLocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+          <folding>
+            <element signature="e#12286#12287#0" expanded="true" />
+            <element signature="e#12324#12325#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/activities/SearchBunkStationActvity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="305" column="12" lean-forward="true" selection-start-line="305" selection-start-column="12" selection-end-line="305" selection-end-column="12" />
+        <state relative-caret-position="149">
+          <caret line="354" column="32" selection-start-line="354" selection-start-column="32" selection-end-line="354" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c3a11bea9d83770c7963a5e3d9e2619e/play-services-location-17.0.0/jars/classes.jar!/com/google/android/gms/location/FusedLocationProviderClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="59" column="22" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/base/EasyWayLocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="358" column="41" selection-start-line="358" selection-start-column="41" selection-end-line="358" selection-end-column="41" />
+          <folding>
+            <element signature="docComment;class#EasyWayLocation#0" />
+            <element signature="e#12537#12981#0" expanded="true" />
+            <element signature="e#12980#12981#0" expanded="true" />
           </folding>
         </state>
       </provider>
