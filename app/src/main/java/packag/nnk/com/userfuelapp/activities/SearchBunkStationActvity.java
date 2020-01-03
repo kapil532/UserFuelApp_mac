@@ -1,6 +1,10 @@
 package packag.nnk.com.userfuelapp.activities;
 
+import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.location.Location;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -13,9 +17,13 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.easywaylocation.EasyWayLocation;
+import com.example.easywaylocation.Listener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -36,7 +44,7 @@ import packag.nnk.com.userfuelapp.interfaces.getBunkDetails;
 import packag.nnk.com.userfuelapp.model.Bunk;
 import packag.nnk.com.userfuelapp.model.BunkDetails;
 
-public class SearchBunkStationActvity extends BaseActivity
+public class SearchBunkStationActvity extends BaseActivity implements Listener
 {
 
     EditText autoCompleteTextView;
@@ -45,16 +53,31 @@ public class SearchBunkStationActvity extends BaseActivity
     private RecyclerView mResultList;
     public static getBunkDetails bunkDetails;
 
+
+    private static final int ERROR_DIALOG_CODE = 101;
+    private static final int PER_REQ_CODE = 102;
+
+    private static final String FINE_LOCATION = Manifest.permission.ACCESS_FINE_LOCATION;
+    private static final String COARSE_LOCATION = Manifest.permission.ACCESS_COARSE_LOCATION;
+
+    private String myPer[] = {Manifest.permission.ACCESS_FINE_LOCATION};
+
+
+
+
     @BindView(R.id.back)
     ImageView back;
 
-   ArrayList<Bunk> bunkArrayList;
+    EasyWayLocation easyWayLocation;
+
+    private Double lati = 0.0, longi = 0.0;
+    ArrayList<Bunk> bunkArrayList;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.bunk_find);
-  ButterKnife.bind(this);
+         ButterKnife.bind(this);
 
         mFirebaseDatabaseReference   = FirebaseDatabase.getInstance().getReference("location");
 
@@ -71,6 +94,15 @@ public class SearchBunkStationActvity extends BaseActivity
                 adapter(null,bunkArrayList);
             }
 
+        }
+
+
+        openLocation();
+        if (permissionIsGranted()) {
+            doLocationWork();
+        } else {
+            // Permission not granted, ask for it
+            getLocationPermission();
         }
 
     }
@@ -214,6 +246,112 @@ public class SearchBunkStationActvity extends BaseActivity
     }
 
 
+    private void getLocationPermission() {
+
+        if (ContextCompat.checkSelfPermission(this, FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+            Log.e(TAG, "3");
+
+            // easyWayLocation.startLocation();
+
+        } else {
+            ActivityCompat.requestPermissions(this, myPer, PER_REQ_CODE);
+        }
+    }
+
+
+
+    public boolean permissionIsGranted() {
+
+        int permissionState = ActivityCompat.checkSelfPermission(this,
+                Manifest.permission.ACCESS_FINE_LOCATION);
+
+        return permissionState == PackageManager.PERMISSION_GRANTED;
+    }
+
+    private void doLocationWork() {
+        lati = easyWayLocation.getLatitude();
+        longi = easyWayLocation.getLongitude();
+        Log.e("LOC", "LOC" + lati);
+        if (lati != 0.0) {
+            packag.nnk.com.userfuelapp.model.Location loc = new packag.nnk.com.userfuelapp.model.Location();
+            loc.setLatitude(easyWayLocation.getLatitude());
+            loc.setLongitude(easyWayLocation.getLongitude());
+
+        }
+//        easyWayLocation.startLocation();
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        switch (requestCode) {
+            case EasyWayLocation.LOCATION_SETTING_REQUEST_CODE:
+                easyWayLocation.onActivityResult(resultCode);
+                break;
+        }
+    }
+
+    void openLocation()
+    {
+        if (easyWayLocation == null) {
+
+            Log.e("LOcation","Location---null");
+            easyWayLocation = new EasyWayLocation(this, false, this);
+            easyWayLocation.startLocation();
+
+        } else if (easyWayLocation.hasLocationEnabled()) {
+
+            Log.e("LOcation","Location---has");
+            easyWayLocation.startLocation();
+            //easyWayLocation.endUpdates();
+        }
+    }
+
+
+
+    @Override
+    public void locationOn() {
+       // easyWayLocation.endUpdates();
+        Log.e("LOcation","Location---on");
+        stopLocationUpdate();
+    }
+
+    @Override
+    public void currentLocation(Location location)
+    {
+
+     Log.e("LOcation","Location"+location.getLatitude());
+        stopLocationUpdate();
+
+    }
+
+    @Override
+    public void locationCancelled() {
+        Log.e("LOcation","Location---off");
+        stopLocationUpdate();
+      //  easyWayLocation.endUpdates();
+        finish();
+
+    }
+
+
+
+void stopLocationUpdate()
+{
+    if (easyWayLocation != null)
+    {
+        if (easyWayLocation.hasLocationEnabled()) {
+            easyWayLocation.endUpdates();
+            easyWayLocation = null;
+        }
+    }
+
+}
+
+
+
+
+
 
 
 
@@ -274,5 +412,19 @@ public class SearchBunkStationActvity extends BaseActivity
 
         }
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+       // easyWayLocation.startLocation();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+      //  easyWayLocation.endUpdates();
+
+    }
+
 
 }

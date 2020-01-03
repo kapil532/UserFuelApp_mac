@@ -17,6 +17,9 @@ buildscript {
 }
 
 allprojects {
+
+   // buildDir="https://drive.google.com/drive/folders/1BQvwq-tFN5dP_XTrlhaPcmFmWspTLpn7"
+
     repositories {
         google()
         jcenter()

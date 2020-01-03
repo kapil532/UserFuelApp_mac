@@ -26,6 +26,7 @@ import butterknife.OnClick;
 import packag.nnk.com.userfuelapp.R;
 import packag.nnk.com.userfuelapp.activities.MainActivity;
 import packag.nnk.com.userfuelapp.base.BaseActivity;
+import packag.nnk.com.userfuelapp.base.CommonClass;
 import packag.nnk.com.userfuelapp.check_view.CheckView;
 import packag.nnk.com.userfuelapp.transaction.TransactionActivity;
 
@@ -88,7 +89,7 @@ public class SuccessScreen extends BaseActivity {
         time.setText(currentTime +" on "+currentDate);
         transaction_id.setText(petrolID);
         bunkName.setText(petr_name);
-        paidAmount.setText(getResources().getString(R.string.symbol_rs)+" "+petr_price);
+        paidAmount.setText(getResources().getString(R.string.symbol_rs)+" "+ CommonClass.getSaparatorIntoMoney(petr_price));
 
 
         handler.postDelayed(my,400);
