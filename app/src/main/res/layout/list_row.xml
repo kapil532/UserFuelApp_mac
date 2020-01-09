@@ -53,12 +53,27 @@
             android:textSize="14sp"
             android:textStyle="bold"/>
 
-        <packag.nnk.com.userfuelapp.ui.CustomTextView
-            android:id="@+id/time"
+
+        <packag.nnk.com.userfuelapp.ui.CustomMediumFontTextView
+            android:id="@+id/rupees"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/thumbnail"
             android:layout_below="@+id/address"
+            android:layout_marginLeft="12dp"
+            android:maxLines="3"
+            android:layout_marginTop="3dp"
+            android:text="amount paid: 200 Rs."
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="#444"
+            android:textSize="14sp"
+            />
+        <packag.nnk.com.userfuelapp.ui.CustomMediumFontTextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:layout_below="@+id/rupees"
             android:layout_marginLeft="12dp"
             android:maxLines="3"
             android:layout_marginTop="3dp"
@@ -68,20 +83,7 @@
             android:textSize="14sp"
           />
 
-        <packag.nnk.com.userfuelapp.ui.CustomTextView
-            android:id="@+id/rupees"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/thumbnail"
-            android:layout_below="@+id/time"
-            android:layout_marginLeft="12dp"
-            android:maxLines="3"
-            android:layout_marginTop="3dp"
-            android:text="amount paid: 200 Rs."
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-            android:textColor="#444"
-            android:textSize="14sp"
-            />
+
 
 
 

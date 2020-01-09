@@ -149,6 +149,7 @@ public class MainActivity extends BaseActivity implements
 
     Double paymentPrice = 0.0;
     String petrolBunkName = "";
+    String petrolAddress = "";
     String petrolID = "";
 
     Location loc;
@@ -368,6 +369,7 @@ public class MainActivity extends BaseActivity implements
         if(bunkDetails != null)
         {
             petrolBunkName = bunkDetails.getBunkName();
+            petrolAddress =bunkDetails.getBunkAddress();
             petrolID = bunkDetails.getBunkId();
 
             Picasso.with(this).load(bunkDetails.getIconId())
@@ -380,6 +382,7 @@ public class MainActivity extends BaseActivity implements
         else
         {
             petrolBunkName = bunk.getPetrolBunkName();
+            petrolAddress =bunk.getPetrolBunkAddress();
             petrolID = bunk.getId();
 
             Picasso.with(this).load(bunk.getIconId())
@@ -621,6 +624,7 @@ public class MainActivity extends BaseActivity implements
 //                       showSuccessScreen();
                         Intent success = new Intent(getApplicationContext(), SuccessScreen.class);
                         success.putExtra("petr_name", "" + petrolBunkName);
+                        success.putExtra("petr_address", "" + petrolAddress);
                         success.putExtra("petr_price", "" + paymentPrice);
                         success.putExtra("petrolID", "" + petrolID);
                         startActivity(success);

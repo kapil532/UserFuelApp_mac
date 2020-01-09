@@ -53,8 +53,9 @@
      android:id="@+id/transaction_card"
      android:layout_width="match_parent"
      android:layout_height="wrap_content"
-     android:layout_below="@+id/top"
+     android:layout_below="@+id/paid_card"
      android:elevation="10dp"
+     android:layout_marginTop="16dp"
      app:cardElevation="10dp"
      >
 
@@ -78,7 +79,7 @@
              android:layout_width="wrap_content"
              android:id="@+id/transaction_id"
              android:layout_height="wrap_content"
-             android:textSize="18sp"
+             android:textSize="14sp"
              android:layout_marginTop="10dp"
              android:textColor="@color/quantum_black_100"
              android:text="Transaction ID"
@@ -97,8 +98,8 @@
         android:id="@+id/paid_card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_below="@+id/transaction_card"
+        android:layout_marginTop="0dp"
+        android:layout_below="@+id/top"
         android:elevation="10dp"
         app:cardElevation="10dp"
         >
@@ -124,7 +125,7 @@
                 android:layout_height="wrap_content"
                 android:weightSum="3"
                 android:orientation="horizontal">
-            <packag.nnk.com.userfuelapp.ui.CustomTextView
+            <packag.nnk.com.userfuelapp.ui.CustomMediumFontTextView
                 android:layout_width="0dp"
                 android:id="@+id/bunkName"
                 android:layout_height="wrap_content"
@@ -133,7 +134,6 @@
                 android:layout_marginTop="10dp"
                 android:textColor="@color/quantum_black_100"
                 android:text="Bunk Name"
-
                 />
 
 
@@ -150,6 +150,17 @@
 
                     />
             </LinearLayout>
+            <packag.nnk.com.userfuelapp.ui.CustomTextView
+                android:layout_width="match_parent"
+                android:id="@+id/bunkName_add"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_weight="2"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/quantum_black_100"
+                android:text="Bunk Name"
+                />
+
         </LinearLayout>
 
 
@@ -162,8 +173,9 @@
         android:id="@+id/supportLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/paid_card"
+        android:layout_below="@id/transaction_card"
         android:elevation="10dp"
+        android:visibility="gone"
         app:cardElevation="10dp"
         android:layout_marginTop="16dp"
         >

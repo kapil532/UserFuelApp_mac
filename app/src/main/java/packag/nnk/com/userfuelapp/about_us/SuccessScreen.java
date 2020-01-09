@@ -49,6 +49,9 @@ public class SuccessScreen extends BaseActivity {
     @BindView(R.id.paidAmount)
     TextView paidAmount;
 
+    @BindView(R.id.bunkName_add)
+    TextView bunkName_add;
+
 
     @BindView(R.id.supportLayout)
     CardView supportLayout;
@@ -64,7 +67,7 @@ public class SuccessScreen extends BaseActivity {
     Button history;
 
 
-    String petr_name,petr_price;
+    String petr_name,petr_price,petr_address;
 
     final Handler handler = new Handler();
     final Handler handler2 = new Handler();
@@ -81,6 +84,7 @@ public class SuccessScreen extends BaseActivity {
         if (bundle != null) {
             petr_name = bundle.getString("petr_name");
             petr_price = bundle.getString("petr_price");
+            petr_address = bundle.getString("petr_address");
             petrolID = bundle.getString("petrolID");
         }
         String currentDate = new SimpleDateFormat("dd-MMM-yyyy", Locale.getDefault()).format(new Date());
@@ -89,6 +93,7 @@ public class SuccessScreen extends BaseActivity {
         time.setText(currentTime +" on "+currentDate);
         transaction_id.setText(petrolID);
         bunkName.setText(petr_name);
+        bunkName_add.setText(petr_address);
         paidAmount.setText(getResources().getString(R.string.symbol_rs)+" "+ CommonClass.getSaparatorIntoMoney(petr_price));
 
 

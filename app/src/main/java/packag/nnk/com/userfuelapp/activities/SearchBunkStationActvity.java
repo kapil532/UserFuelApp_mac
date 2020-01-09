@@ -48,6 +48,8 @@ import packag.nnk.com.userfuelapp.model.BunkDetails;
 public class SearchBunkStationActvity extends BaseActivity implements Listener
 {
 
+
+
     EditText autoCompleteTextView;
     CustomAdapter _adapter;
     DatabaseReference mFirebaseDatabaseReference;

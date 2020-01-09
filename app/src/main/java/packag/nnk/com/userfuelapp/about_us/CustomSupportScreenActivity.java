@@ -3,6 +3,7 @@ package packag.nnk.com.userfuelapp.about_us;
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
+import android.content.ActivityNotFoundException;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -212,7 +213,9 @@ public class CustomSupportScreenActivity extends BaseActivity {
                             return;
                         }
                     }
-                    automaticBooking(s);
+//                    automaticBooking(s);
+                    sendEmail(s);
+
                 }
             }
         });
@@ -411,5 +414,48 @@ public class CustomSupportScreenActivity extends BaseActivity {
         Intent intent = new Intent(Intent.ACTION_CALL);
         intent.setData(Uri.parse("tel:+919886129128"));
         startActivity(intent);
+    }
+
+
+
+    protected void sendEmail(String s) {
+
+
+        String mailto = "mailto:kapil.bic@gmail.com" +
+                "?cc=" + "kapil.bic@gmail.com" +
+                "&subject=" + Uri.encode("Support") +
+                "&body=" + Uri.encode(s);
+
+        Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
+        emailIntent.setData(Uri.parse(mailto));
+
+        try {
+            startActivity(emailIntent);
+            finish();
+
+        } catch (ActivityNotFoundException e) {
+            //TODO: Handle case where no email app is available
+        }
+       /* Log.e("Send email", "");
+        String[] TO = {"kapil.bic@gmail.com"};
+        String[] CC = {};
+        Intent emailIntent = new Intent(Intent.ACTION_SEND);
+
+        emailIntent.setData(Uri.parse("mailto:"));
+        emailIntent.setType("text/plain");
+        emailIntent.putExtra(Intent.EXTRA_EMAIL, TO);
+        emailIntent.putExtra(Intent.EXTRA_CC, CC);
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Support");
+        emailIntent.putExtra(Intent.EXTRA_TEXT, ""+s);
+
+        try {
+            startActivity(Intent.createChooser(emailIntent, "Send mail..."));
+           // finish();
+
+
+        } catch (android.content.ActivityNotFoundException ex)
+        {
+            Toast.makeText(getApplicationContext(), "There is no email client installed.", Toast.LENGTH_SHORT).show();
+        }*/
     }
 }

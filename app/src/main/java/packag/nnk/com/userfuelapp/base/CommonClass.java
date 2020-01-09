@@ -1,13 +1,19 @@
 package packag.nnk.com.userfuelapp.base;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.SharedPreferences;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.text.DecimalFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
+import java.util.TimeZone;
 
 import packag.nnk.com.userfuelapp.model.Bunk;
 import packag.nnk.com.userfuelapp.model.wallet.History;
@@ -141,5 +147,51 @@ public class CommonClass
 
 
     }
+
+
+    public static String getUTCToLocalDate(String date) {
+        Date inputDate = new Date();
+
+
+            @SuppressLint("SimpleDateFormat") SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
+            simpleDateFormat.setTimeZone(TimeZone.getTimeZone("UTC"));
+            try {
+                inputDate = simpleDateFormat.parse(date);
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+
+
+        SimpleDateFormat output = new SimpleDateFormat("hh:mm a dd-MMM-yyyy");
+
+     /*   Date d = null;
+        try {
+            d = inputDate.parse(date);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }*/
+        return output.format(inputDate);
+
+    }
+
+    public static String dateToString( String format, String timeZone) {
+
+        Date  date = new Date();
+        // create SimpleDateFormat object
+        SimpleDateFormat sdf = new SimpleDateFormat(format);
+
+        // default system timezone if passed null or empty
+        if (timeZone == null || "".equalsIgnoreCase(timeZone.trim())) {
+
+            timeZone = Calendar.getInstance().getTimeZone().getID();
+
+        }
+        // set timezone to SimpleDateFormat
+        sdf.setTimeZone(TimeZone.getTimeZone(timeZone));
+        // return Date in required format with timezone as String
+        return sdf.format(date);
+
+    }
+
 
 }

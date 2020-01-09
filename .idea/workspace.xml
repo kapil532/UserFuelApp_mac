@@ -11,17 +11,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84cbc974-179f-40bd-9312-9a5f2d9ffb07" name="Default Changelist" comment="new">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/base/EasyWayLocation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/base/Listener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/about_us/CustomSupportScreenActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/about_us/CustomSupportScreenActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/about_us/SuccessScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/about_us/SuccessScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/activities/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/activities/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/activities/SearchBunkStationActvity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/activities/SearchBunkStationActvity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/base/CommonClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/base/CommonClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/bunk_search/CustomWalletAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/bunk_search/CustomWalletAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/transaction/MyRecyclerViewAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/transaction/MyRecyclerViewAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/transaction/TransactionActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/transaction/TransactionActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/list_row.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_row.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/success_screen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/success_screen.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +40,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="42562114" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="3200361a5ed9c567" />
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
@@ -42,28 +50,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/activities/SearchBunkStationActvity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="354" column="32" selection-start-line="354" selection-start-column="32" selection-end-line="354" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/base/EasyWayLocation.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/about_us/CustomSupportScreenActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="358" column="41" selection-start-line="358" selection-start-column="41" selection-end-line="358" selection-end-column="41" />
-              <folding>
-                <element signature="docComment;class#EasyWayLocation#0" />
-                <element signature="e#12537#12981#0" expanded="true" />
-                <element signature="e#12980#12981#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="188">
+              <caret line="433" column="21" selection-start-line="433" selection-start-column="21" selection-end-line="433" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -101,6 +92,8 @@
       <find>checkLocationSetting</find>
       <find>locationCallback</find>
       <find>beginUpdates</find>
+      <find>succe</find>
+      <find>petrolBunkName</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -124,25 +117,19 @@
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/drawer_menu.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/activities/OtpVerification.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/transaction/MyRecyclerViewAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/activities/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/menu_toolbar.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/bunk_find.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/list_row.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/about_us/AboutUsScreen.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/fragment_view/WalletFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/model/wallet/History.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/model/wallet/WalletHistory.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/bunk_search/CustomWalletAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/wallet_fragment.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/transaction_list.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/driver_wallet_history.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/wallet_history_list.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/activities/DriverWalletAddHistory.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/transaction/TransactionActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/base/CommonClass.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/interfaces/ApiInterface.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/activities/SplashActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout-v26/profile_edit_screen.xml" />
@@ -150,21 +137,29 @@
         <option value="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/model/Location.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/activities/UserCreateActivity.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/about_us/SuccessScreen.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/attrs.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/base/CurrencyEditText.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/single_grid_element.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/base/Listener.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/activities/SearchBunkStationActvity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/base/EasyWayLocation.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/activities/SearchBunkStationActvity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/base/CommonClass.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/transaction/MyRecyclerViewAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/bunk_search/CustomWalletAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/transaction/TransactionActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/list_row.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/activities/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/about_us/SuccessScreen.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/success_screen.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/about_us/CustomSupportScreenActivity.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="663" />
-    <option name="y" value="38" />
-    <option name="width" value="900" />
-    <option name="height" value="627" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="31" />
+    <option name="y" value="23" />
+    <option name="width" value="1380" />
+    <option name="height" value="777" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -173,8 +168,6 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -240,49 +233,14 @@
             <path>
               <item name="UserFuelApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="goFuels" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="userfuelapp" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UserFuelApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="goFuels" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="userfuelapp" type="462c0819:PsiDirectoryNode" />
-              <item name="bunk_search" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UserFuelApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="goFuels" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UserFuelApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="goFuels" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="values" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UserFuelApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="goFuels" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="gradle" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -392,7 +350,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="801" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
@@ -405,15 +363,15 @@
       <window_info id="Capture Tool" order="7" />
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="0" weight="0.32907802" />
-      <window_info active="true" anchor="bottom" id="Logcat" order="1" sideWeight="0.4985694" visible="true" weight="0.42409638" />
+      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.4985694" weight="0.42409638" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Android Profiler" order="3" />
       <window_info anchor="bottom" id="Debug" order="4" />
-      <window_info anchor="bottom" id="Terminal" order="5" weight="0.32891566" />
+      <window_info anchor="bottom" id="Terminal" order="5" weight="0.5102804" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.50143063" side_tool="true" weight="0.5248227" />
       <window_info anchor="bottom" id="Flutter Performance" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Build" order="9" weight="0.32650602" />
+      <window_info active="true" anchor="bottom" id="Build" order="9" visible="true" weight="0.24541607" />
       <window_info anchor="bottom" id="Find" order="10" weight="0.32907802" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
@@ -422,7 +380,7 @@
       <window_info anchor="right" id="Flutter Inspector" order="4" />
       <window_info anchor="right" id="Flutter Outline" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Preview" order="7" weight="0.3297568" />
+      <window_info anchor="right" id="Preview" order="7" weight="0.31545064" />
       <window_info anchor="right" id="Assistant" order="8" weight="0.3297568" />
       <window_info anchor="right" id="Hierarchy" order="9" weight="0.3297568" />
     </layout>
@@ -464,24 +422,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="new" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/model/Balance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-          <folding>
-            <element signature="e#474#475#0" expanded="true" />
-            <element signature="e#504#505#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/menu_toolbar.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
@@ -495,14 +435,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="562">
           <caret line="50" column="17" lean-forward="true" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_row.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="88" column="36" lean-forward="true" selection-start-line="88" selection-start-column="36" selection-end-line="88" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -638,13 +570,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/transaction/MyRecyclerViewAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="56" column="81" selection-start-line="56" selection-start-column="73" selection-end-line="56" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/fragment_view/WalletFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -660,36 +585,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/transaction_list.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="38" column="34" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/anim/item_animation_fall_down.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/activities/DriverWalletAddHistory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="142" column="46" lean-forward="true" selection-start-line="138" selection-start-column="7" selection-end-line="142" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/bunk_search/CustomWalletAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/wallet_history_list.xml">
       <provider editor-type-id="android-designer2" />
@@ -797,34 +694,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/about_us/SuccessScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="91" column="122" selection-start-line="91" selection-start-column="122" selection-end-line="91" selection-end-column="122" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/transaction/TransactionActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/attrs.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
           <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/base/CommonClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1905">
-          <caret line="137" column="55" selection-start-line="137" selection-start-column="44" selection-end-line="137" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -880,16 +753,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/activities/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="167" column="38" selection-start-line="167" selection-start-column="38" selection-end-line="167" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/activities/SplashActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -918,16 +781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/activities/SearchBunkStationActvity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="354" column="32" selection-start-line="354" selection-start-column="32" selection-end-line="354" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c3a11bea9d83770c7963a5e3d9e2619e/play-services-location-17.0.0/jars/classes.jar!/com/google/android/gms/location/FusedLocationProviderClient.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -935,15 +788,120 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/activities/SearchBunkStationActvity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/activities/DriverWalletAddHistory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1575">
+          <caret line="137" column="31" selection-start-line="137" selection-start-column="31" selection-end-line="137" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/base/CommonClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2025">
+          <caret line="151" column="42" selection-start-line="151" selection-start-column="25" selection-end-line="151" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/bunk_search/CustomWalletAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="100" column="1" lean-forward="true" selection-start-line="100" selection-start-column="1" selection-end-line="100" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/base/EasyWayLocation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
+        <state relative-caret-position="356">
           <caret line="358" column="41" selection-start-line="358" selection-start-column="41" selection-end-line="358" selection-end-column="41" />
           <folding>
             <element signature="docComment;class#EasyWayLocation#0" />
             <element signature="e#12537#12981#0" expanded="true" />
             <element signature="e#12980#12981#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/transaction_list.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="34" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/transaction/TransactionActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="191" column="28" lean-forward="true" selection-start-line="191" selection-start-column="28" selection-end-line="191" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/transaction/MyRecyclerViewAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="43" column="83" lean-forward="true" selection-start-line="43" selection-start-column="83" selection-end-line="43" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_row.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="69" column="14" lean-forward="true" selection-start-line="69" selection-start-column="14" selection-end-line="69" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/success_screen.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="78" column="48" lean-forward="true" selection-start-line="78" selection-start-column="48" selection-end-line="78" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/about_us/SuccessScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="77" column="39" selection-start-line="77" selection-start-column="39" selection-end-line="77" selection-end-column="39" />
+          <folding>
+            <element signature="e#2473#2517#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/activities/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1121">
+          <caret line="632" column="53" selection-start-line="632" selection-start-column="53" selection-end-line="632" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/packag/nnk/com/userfuelapp/about_us/CustomSupportScreenActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="433" column="21" selection-start-line="433" selection-start-column="21" selection-end-line="433" selection-end-column="21" />
         </state>
       </provider>
     </entry>

@@ -56,7 +56,9 @@ public class CustomWalletAdapter extends RecyclerView.Adapter<CustomWalletAdapte
     }
 
     String dateFromat(String date) {
-        SimpleDateFormat input = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
+
+        return CommonClass.getUTCToLocalDate(date);
+     /*   SimpleDateFormat input = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
         SimpleDateFormat output = new SimpleDateFormat("hh:mm a dd-MMM-yyyy");
 
         Date d = null;
@@ -65,7 +67,7 @@ public class CustomWalletAdapter extends RecyclerView.Adapter<CustomWalletAdapte
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        return output.format(d);
+        return output.format(d);*/
     }
 
     @Override

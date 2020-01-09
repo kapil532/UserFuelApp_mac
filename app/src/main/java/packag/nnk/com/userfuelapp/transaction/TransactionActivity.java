@@ -181,6 +181,7 @@ public class TransactionActivity extends BaseActivity {
 
     }
 
+
     private TransactionPojo readJsonData() {
         String jsonString = CommonClass.getAssetJsonData(this, "transaction.json");
         Gson gson = new Gson();
